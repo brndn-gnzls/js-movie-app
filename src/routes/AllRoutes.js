@@ -5,7 +5,7 @@ import React from 'react'
 
 export const AllRoutes = () => {
   return (
-    <>
+    <div className="dark:bg-slate-800">
         <Routes>
             <Route path="/" element={<MovieList />} />S
             <Route path="/movie/:id" element={<MovieDetail />} />S
@@ -15,6 +15,6 @@ export const AllRoutes = () => {
             <Route path="search" element={<Search />} />S
             <Route path="*" element={<PageNotFound />} />S
         </Routes>
-    </>
+    </div>
   )
 }
