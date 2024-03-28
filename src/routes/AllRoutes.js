@@ -12,7 +12,7 @@ export const AllRoutes = () => {
         <Route path="/movies/popular" element={<MovieList apiPath="movie/popular" />} />S
         <Route path="/movies/top" element={<MovieList apiPath="movie/top_rated" />} />S
         <Route path="/movies/upcoming" element={<MovieList apiPath="movie/upcoming" />} />S
-        <Route path="search" element={<Search />} />S
+        <Route path="search" element={<Search apiPath="search/movie"/>} />S
         <Route path="*" element={<PageNotFound />} />S
       </Routes>
     </div>
